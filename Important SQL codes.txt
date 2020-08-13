@@ -1,0 +1,24 @@
+UPDATE Orders Order
+SET Order.Quantity =  Order.Quantity - 1
+WHERE SomeCondition(Order)
+
+catagory_id AS 'C' + RIGHT('0000' + CAST(csrl AS VARCHAR(10)), 4) PERSISTED PRIMARY KEY
+
+IF DATENAME(weekday, GETDATE()) IN (N'Saturday', N'Sunday')
+       SELECT 'Weekend';
+ELSE 
+       SELECT 'Weekday';
+
+update table1 set price=(select price from table2 where table1.id=table2.id);
+
+exec ISSUE
+@ibook_id='B0001',
+@istudent_id='S0001',
+@ilibrarian_id='L0001',
+@issuedate='2018-05-12'
+
+
+exec Returnbook
+@ibook_id='B0001',
+@istudent_id='S0005',
+@returndate= '2018-06-03'
